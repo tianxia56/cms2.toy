@@ -6,7 +6,7 @@ def run_commands(sim_id, pop1, pop2):
         f"python mk-fst.py {sim_id} {pop1} {pop2}",
         f"python mk-daf.py {sim_id} {pop1} {pop2}",
         f"python mk-selscans.py {sim_id} {pop1} {pop2}",
-        f"python mk-delihh.py {sim_id}"
+        f"python make-all-scores.py {sim_id}"
     ]
     
     for command in commands:
