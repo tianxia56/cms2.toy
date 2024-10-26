@@ -4,8 +4,10 @@ import sys
 def run_commands(sim_id, pop1, pop2):
     commands = [
         f"python mk-fst.py {sim_id} {pop1} {pop2}",
-        f"python mk-daf.py {sim_id} {pop1} {pop2}",
+        f"python mk-freqs.py {sim_id} {pop1} {pop2}",
         f"python mk-selscans.py {sim_id} {pop1} {pop2}",
+        f"python mk-delihh-merge.py {sim_id}",
+        # Wrap up
         f"python make-all-scores.py {sim_id}"
     ]
     
