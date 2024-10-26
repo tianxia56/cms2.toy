@@ -27,4 +27,6 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
    ```sh
     python make-all-scores.py hap.0000 1 2
    ```
+the operation order is mk-fst.py, mk-freqs.py, mk-selscans.py, mk-delihh-merge.py, make-all-scores.py.
+
    
