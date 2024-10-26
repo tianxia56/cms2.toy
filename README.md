@@ -9,7 +9,7 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
 
 ## Instructions
 
-1. Use Docker to set up the environment:
+1. Run cosi2 in Docker:
     ```sh
     docker run -it -v $(pwd):/home quay.io/ilya_broad/dockstore-tool-cosi2 /bin/bash
     cd home
