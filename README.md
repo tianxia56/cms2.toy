@@ -19,7 +19,7 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
 
 3. By default, the script runs 1000 iterations. The demographic model and meta-information are defined in `sel.demo.par`.
 
-4. Iterate over the simulations to generate scores for the selected population:
+4. Iterate sim.id over the simulations to generate scores for the selected population (pop1):
     ```sh
     python make-all-scores.py <sim.id> <pop1> <pop2>
     ```
