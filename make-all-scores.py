@@ -29,8 +29,7 @@ def run_commands(sim_id, pop1, pop2):
         f"{sim_id}.ihh12.out",
         f"{sim_id}.ihh12.log",
         f"{sim_id}_{pop1}_vs_{pop2}.xpehh.out",
-        f"{sim_id}_{pop1}_vs_{pop2}.xpehh.log",
-        f"{sim_id}_merged_selscan.tsv"
+        f"{sim_id}_{pop1}_vs_{pop2}.xpehh.log"
     ]
     
     for output in outputs_to_remove:
