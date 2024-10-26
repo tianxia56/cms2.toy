@@ -32,8 +32,8 @@ run_command() {
     done
 }
 
-# Loop to run the command for each output name from hap.0166 to hap.1000
-for a in $(seq 251 1000); do
+# Loop to run the command for each output name from hap.0000 to hap.1000
+for a in $(seq 0 1000); do
     output_name=$(printf "hap.%04d" $a)
     run_command $output_name
 done
