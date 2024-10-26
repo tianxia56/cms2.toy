@@ -2,10 +2,10 @@
 
 ## Requirements
 - Docker
-- selscan v2.0
+- selscan v2.0 https://github.com/szpiech/selscan
 
 ## Overview
-This code generates haplotype (hap) files using cosi2. For more information on cosi2, visit [cosi2 documentation](https://software.broadinstitute.org/mpg/cosi2/cosidoc.html).
+This code generates haplotype (hap) files using cosi2 [cosi2 documentation](https://software.broadinstitute.org/mpg/cosi2/cosidoc.html).
 
 ## Instructions
 
