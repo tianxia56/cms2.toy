@@ -14,9 +14,9 @@ if __name__ == "__main__":
     tped_file2 = f"{sim_id}_0_{pop2}.tped"
     
     # Run selscan commands
-    os.system(f"selscan --ihs --ihs-detail --tped {tped_file1} --out {sim_id}")
-    os.system(f"selscan --nsl --tped {tped_file1} --out {sim_id}")
-    os.system(f"selscan --ihh12 --tped {tped_file1} --out {sim_id}")
-    os.system(f"selscan --xpehh --tped {tped_file1} --tped-ref {tped_file2} --out {sim_id}_{pop1}_vs_{pop2}")
+    os.system(f"selscan --ihs --ihs-detail --tped {tped_file1} --out {sim_id} --threads 4")
+    os.system(f"selscan --nsl --tped {tped_file1} --out {sim_id} --threads 4")
+    os.system(f"selscan --ihh12 --tped {tped_file1} --out {sim_id} --threads 4")
+    os.system(f"selscan --xpehh --tped {tped_file1} --tped-ref {tped_file2} --out {sim_id}_{pop1}_vs_{pop2} --threads 4")
     
     print("Selscan commands have been executed.")
