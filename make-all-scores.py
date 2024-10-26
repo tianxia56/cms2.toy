@@ -20,17 +20,17 @@ def run_commands(sim_id, pop1, pop2):
     
     # Remove the specified outputs
     outputs_to_remove = [
-        f"hap.{sim_id}_fst_{pop1}_vs_{pop2}.tsv",
-        f"hap.{sim_id}_daf_{pop1}_vs_{pop2}.tsv",
-        f"hap.{sim_id}.ihs.out",
-        f"hap.{sim_id}.ihs.log",
-        f"hap.{sim_id}.nsl.out",
-        f"hap.{sim_id}.nsl.log",
-        f"hap.{sim_id}.ihh12.out",
-        f"hap.{sim_id}.ihh12.log",
-        f"hap.{sim_id}_{pop1}_vs_{pop2}.xpehh.out",
-        f"hap.{sim_id}_{pop1}_vs_{pop2}.xpehh.log",
-        f"hap.{sim_id}_merged_selscan.tsv"
+        f"{sim_id}_fst_{pop1}_vs_{pop2}.tsv",
+        f"{sim_id}_daf_{pop1}_vs_{pop2}.tsv",
+        f"{sim_id}.ihs.out",
+        f"{sim_id}.ihs.log",
+        f"{sim_id}.nsl.out",
+        f"{sim_id}.nsl.log",
+        f"{sim_id}.ihh12.out",
+        f"{sim_id}.ihh12.log",
+        f"{sim_id}_{pop1}_vs_{pop2}.xpehh.out",
+        f"{sim_id}_{pop1}_vs_{pop2}.xpehh.log",
+        f"{sim_id}_merged_selscan.tsv"
     ]
     
     for output in outputs_to_remove:
