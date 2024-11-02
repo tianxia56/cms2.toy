@@ -28,5 +28,6 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
     python make-all-scores.py hap.0000 1 2
    ```
 the operation order is mk-fst.py, mk-freqs.py, mk-selscans.py, mk-delihh-merge.py, make-all-scores.py.
+
 5. After generating selected and neutral haplotypes, non-repeatedly choose 30 selected and randomly choose 1000 haplotypes to normalized, replace the unnormalized selscan scores with normalized ones by `compu_norm.R`.
    
