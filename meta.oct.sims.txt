@@ -24,7 +24,7 @@ sample_size 4 172
 pop_size 4 1000000
 ...`
 
-##each haplotype is 3Mbp with a mutation rate of 1.25e-08, recombination maps loaded from a give file, and gene conversion relative rate refers to the ratio of the gene conversion initiation rate to the crossover recombination rate populations ids were defined with an integer ID and a 1KGP format label. Sample size refers to numbers of haplotypes, pop_size is the number of individuals
+##each haplotype is 3Mbp with a mutation rate of 1.25e-08, recombination maps loaded from a give file, and gene conversion relative rate refers to the ratio of the gene conversion initiation rate to the crossover recombination rate. Populations ids were defined with an integer ID and a 1KGP format label. Sample size refers to numbers of haplotypes, pop_size is the number of individuals
 
 ##selective sweep
 `pop_event sweep_mult_standing "sweep" 1 U(0, 4000) E(20) .5 .05-.95 1 U(0, 4000)`
