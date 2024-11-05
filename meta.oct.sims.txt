@@ -1,0 +1,39 @@
+
+##simulations worked as
+`env COSI_NEWSIM=1 COSI_MAXATTEMPTS=1000000 coalescent -p sel.demo.par -v -g --genmapRandomRegions --drop-singletons .25 --tped ${sim.id} -n 1 -M -m -r 0`
+##where, it took random regions from a given recombination map (Chr1); it ignored 25% of the singletons
+
+##demographic model: .par file
+
+`length 3000000
+mutation_rate 1.25e-08
+recomb_file test_recom.recom
+gene_conversion_relative_rate 2.3
+
+pop_define 1 YRI
+sample_size 1 172
+pop_size 1 500000
+pop_define 2 CEU
+sample_size 2 172
+pop_size 2 250000
+pop_define 3 CHB
+sample_size 3 172
+pop_size 3 750000
+pop_define 4 BEB
+sample_size 4 172
+pop_size 4 1000000
+...`
+
+##each haplotype is 3Mbp with a mutation rate of 1.25e-08, recombination maps loaded from a give file, and gene conversion relative rate refers to the ratio of the gene conversion initiation rate to the crossover recombination rate populations ids were defined with an integer ID and a 1KGP format label. Sample size refers to numbers of haplotypes, pop_size is the number of individuals
+
+##selective sweep
+`pop_event sweep_mult_standing "sweep" 1 U(0, 4000) E(20) .5 .05-.95 1 U(0, 4000)`
+
+##the advantageous allele of the selective sweep was originated from pop 1 (YRI) from 4000 generations ago to 0 (now). The position of this allele is in the middle (0.5) of the haplotype. The final allele frequency of this alelle from 4000 generations ago to 0 (now) is between 0.05~0.95.
+
+
+##columns of each .tsv file, sim.id is unique to every simulated selected haplotype via cosi2. All one population components (MAF, derived allele frequency, delta derived alelle frequency, delta ihh, ihs, nsl, ihh12) were on pop 1 (YRI), and two pop components (Fst, XPEHH) were between pop 1 and pop 2.
+
+sim.id	pos	MAF	derFreq	delDAF	Fst	delihh	ihs_normed	nsl_normed	ihh12_normed	xpehh_normed
+hap.5000	167	0	1	0.0058	0.0117	NA	NA	NA	NA	NA
+hap.5000	169	0.0116	0.9884	-0.0116	0.0234	NA	NA	NA	NA	NA
