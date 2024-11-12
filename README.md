@@ -15,7 +15,8 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
     cd home
     ```
 or run on cluster:
-##Locate a dir and do pwd
+
+#Locate a dir and do pwd
 ```
 cd workingdir/
 apptainer build cosi.sif docker://docker.io/tx56/cosi
@@ -24,9 +25,8 @@ apptainer build cosi.sif docker://docker.io/tx56/cosi
 #run cosi
 ```
 apptainer exec --bind $(pwd):/home cosi.sif /bin/bash
-#mount cosi to current pathway
+#mount cosi to pwd
 ```
-
  
 2. Run the `mk-tpeds.sh` to generate hap files.
 
