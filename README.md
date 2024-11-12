@@ -16,7 +16,7 @@ This code generates haplotype (hap) files using cosi2 [cosi2 documentation](http
     ```
 or run on cluster:
 
-#Locate a dir and do pwd
+#Locate a dir and download container
 ```
 cd workingdir/
 apptainer build cosi.sif docker://docker.io/tx56/cosi
