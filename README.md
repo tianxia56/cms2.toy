@@ -22,10 +22,9 @@ cd workingdir/
 apptainer build cosi.sif docker://docker.io/tx56/cosi
 ```
 
-#run cosi
+#mount cosi to pwd and run cosi
 ```
 apptainer exec --bind $(pwd):/home cosi.sif /bin/bash
-#mount cosi to pwd
 ```
  
 2. Run the `mk-tpeds.sh` to generate hap files.
