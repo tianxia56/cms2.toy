@@ -42,4 +42,6 @@ apptainer exec --bind $(pwd):/home cosi.sif /bin/bash
 the operation order is mk-fst.py, mk-freqs.py, mk-selscans.py, mk-delihh-merge.py, make-all-scores.py.
 
 5. After generating selected and neutral haplotypes, non-repeatedly choose 30 selected and randomly choose 1000 haplotypes to normalized, replace the unnormalized selscan scores with normalized ones by `compu_norm.R`.
+
+6. `add-isafe.py` was after the normalization. the orders do not matter much.
    
