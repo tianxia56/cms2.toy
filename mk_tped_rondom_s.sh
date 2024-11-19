@@ -20,7 +20,7 @@ run_command() {
         # Calculate the probability density value for the generated x
         local s=\$(awk -v x=\$x -v mean=20 'BEGIN{print (1/mean) * exp(-x/mean)}')
 
-        # Append the line to ../sel.demo.par
+        # Append the line to a non-selected ../sel.demo.par
         echo "pop_event sweep_mult_standing \"sweep\" 1 U(0, 4000) \${s} .5 .05-.95 1 U(0, 4000)" >> ../sel.demo.par
 
         # Run the command in the background
