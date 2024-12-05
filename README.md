@@ -44,4 +44,8 @@ the operation order is mk-fst.py, mk-freqs.py, mk-selscans.py, mk-delihh-merge.p
 5. After generating selected and neutral haplotypes, non-repeatedly choose 30 selected and randomly choose 1000 neutral haplotypes to normalized, replace the unnormalized selscan scores with normalized ones by `compu_norm.R`.
 
 6. `add-isafe.py` was after the normalization. the orders do not matter much.
+
+7. add control selection coefficient and sweep ages to plot joint distribution of derfreq, s, and LD scores
+
+   `control-s-tpeds.sh` >>> `control-s-derfreq.sh` >>> `control-s-ldscore.py`
    
