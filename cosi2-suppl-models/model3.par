@@ -1,0 +1,7 @@
+length 10000000
+mutation_rate 1e-08
+recomb_file model1_recom_file
+
+pop_define 1 YRI
+sample_size 1 40
+pop_size 1 25000
