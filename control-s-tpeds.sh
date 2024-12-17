@@ -24,7 +24,7 @@ run_command() {
         cp ../jv_nulldefault_constantsize.par ../jv_nulldefault_constantsize-\$sim_id.par
 
         # Add the one line command to the copied .par file
-        echo "pop_event sweep_mult_standing \"sweep\" 1 U(0, \$rand) E(\${s}) .5 .05-.95 1 U(0, \$rand)" >> ../jv_nulldefault_constantsize-\$sim_id.par
+        echo "pop_event sweep_mult_standing \"sweep\" 1 U(0, \$rand) \${s} .5 .05-.95 1 U(0, \$rand)" >> ../jv_nulldefault_constantsize-\$sim_id.par
 
         # Run the command in the background
         env COSI_NEWSIM=1 COSI_MAXATTEMPTS=1000000 coalescent -p ../jv_nulldefault_constantsize-\$sim_id.par -v -g --genmapRandomRegions --drop-singletons .25 --tped \${output_name} -n 1 -M -m -r 0 &
